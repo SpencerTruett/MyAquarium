@@ -1,0 +1,36 @@
+@import "../locations/locations.css";
+@import "../navbar/nav.css";
+
+body {
+  background-color: lightskyblue;
+}
+
+.content{
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+.fishies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.fishies__card {
+  flex-basis: 30%;
+  border: 3px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+aside{
+  width: 30%;
+  border: 3px dotted red;
+  padding: 5px;
+}
+
+
