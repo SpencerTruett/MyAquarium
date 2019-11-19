@@ -54,3 +54,5 @@ document.querySelector("#button--captain__ds").addEventListener(
 }
 
 export default initializeDetailButtonLocations
+
+// the previous problem was that I tried to import both events onto both pages; doesn't work like that; had to link this page to the newly-created main__locations.js while the other js file was linked to the other file (main__index.js)

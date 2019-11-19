@@ -21,15 +21,27 @@ img {
 }
 
 .fishies__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   flex-basis: 30%;
+  text-align: center;
   border: 3px solid black;
   padding: 5px;
   margin: 5px;
 }
 
+.highlightFish {
+  background-color: #0066ff;
+}
+
+.highlightTips {
+  border: 2px dotted  darkblue;
+}
+
 aside{
   width: 30%;
-  border: 3px dotted red;
+  border: 3px dotted #0066cc;
   padding: 5px;
 }
 

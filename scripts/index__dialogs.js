@@ -71,3 +71,5 @@ document.querySelector("#button--capn").addEventListener(
 
 // told to place this at the "very bottom" (step 6)
 export default initializeDetailButtonEvents
+
+// the previous problem was that I tried to import both events onto both pages; doesn't work like that; had to link this page to the newly-named main__index.js while the other js file was linked to the other file (main__locations.js)
