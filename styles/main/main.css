@@ -20,6 +20,12 @@ img {
   justify-content: space-evenly;
 }
 
+.fish__name {
+  font-size: x-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+  padding: 10px 0px 10px 0px;
+}
+
 .fishies__card {
   display: flex;
   flex-direction: column;
