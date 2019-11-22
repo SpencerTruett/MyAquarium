@@ -9,16 +9,29 @@
 import initializeDetailButtonEvents from './index__dialogs.js'
 import addMouseOverEventListeners from './highlight.js'
 import addMouseOverEventListenersTips from './tip__higlight.js'
-import { useFish } from './FishDataProvider.js'
+import { useFish } from '/scripts/fish/FishDataProvider.js'
+import FishListComponent from '/scripts/fish/fishList.js'
+import { useTip } from './tips/tipDataProvider.js'
+import TipListComponent from '/scripts/tips/tipList.js'
 
-addMouseOverEventListenersTips()
-addMouseOverEventListeners()
-initializeDetailButtonEvents()
+
 
 // imported an event listener from highlight.js above
 
+FishListComponent()
 const allOfTheFish = useFish()
 
 for (const fish of allOfTheFish){
-  console.log("individual fish object", fish)
+  // console.log("individual fish object", fish)
 }
+
+TipListComponent()
+const allOfTheTips = useTip()
+
+for (const tips of allOfTheTips){
+  // console.log("individual tip objects", tips)
+}
+
+addMouseOverEventListenersTips()
+addMouseOverEventListeners()
+// initializeDetailButtonEvents()

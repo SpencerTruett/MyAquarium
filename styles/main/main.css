@@ -9,8 +9,8 @@ body {
   display: flex;
 }
 
-img {
-  max-width: 100%;
+.fish__image {
+  max-width: 30%;
 }
 
 .fishies {
@@ -26,7 +26,7 @@ img {
   padding: 10px 0px 10px 0px;
 }
 
-.fishies__card {
+.fish {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

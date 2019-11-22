@@ -19,7 +19,7 @@ const fishCollection = [
     species: "Blue Lobster",
     location: "American East Coast",
     length: 12,
-    food: "Steak Au Poivre",
+    food: ["Steak Au Poivre"],
     image: "./images/lobster.jfif",
   },
 
@@ -28,7 +28,7 @@ const fishCollection = [
     species: "Pink Starfish",
     location: "Bikini Bottom",
     length: 5,
-    food: "Krabby Patties",
+    food: ["Krabby Patties"],
     image: "./images/starfish.jpg",
   },
 
@@ -55,7 +55,7 @@ const fishCollection = [
     species: "3 Piece Fish Meal",
     location: "Captain D's",
     length: "3 piece and two sides",
-    food: "Seafood",
+    food: ["Seafood"],
     image: "./images/fried fish.jpg",
   }
 ]
