@@ -31,3 +31,10 @@
   justify-content: space-evenly;
   flex-basis: 20%;
 }
+
+.location__image {
+ width="600"; 
+ height="450"; 
+ frameborder="0";
+ style="border:0;
+}

@@ -13,22 +13,29 @@ const LocationListComponent = () => {
   const contentElement = document.querySelector(".locationList")
   const locations = useLocation()
 
-  let allLocationHTML = ""
+  // let allLocationHTML = ""
 
-  for (const location of locations) {
-    const locationHTML = LocationComponent(location)
-    allLocationHTML += locationHTML
-  }
+  // for (const location of locations) {
+  //   const locationHTML = LocationComponent(location)
+  //   allLocationHTML += locationHTML
+  // }
 
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="locationList">
-          ${allLocationHTML}
+        ${
+          locations.map(
+            (currentLocation) => {
+            return LocationComponent(currentLocation)
+            }
+          ).join("")
+        }
+        console.log(location.image)
       </section>
   `
 }
 
 
-useLocation()
+// useLocation()
 
 export default LocationListComponent

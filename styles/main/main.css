@@ -13,10 +13,10 @@ body {
   max-width: 30%;
 }
 
-.fishies {
+.fishList {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  /* width: 70%; */
   justify-content: space-evenly;
 }
 

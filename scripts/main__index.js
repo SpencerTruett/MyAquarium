@@ -6,7 +6,7 @@
  *  Import the initializeDetailButtonEvents function
  *  reference and then invoke it
  */
-import initializeDetailButtonEvents from './index__dialogs.js'
+import initializeDetailButtonEvents from '/scripts/index__dialogs.js'
 import addMouseOverEventListeners from './highlight.js'
 import addMouseOverEventListenersTips from './tip__higlight.js'
 import { useFish } from '/scripts/fish/FishDataProvider.js'
@@ -31,6 +31,9 @@ const allOfTheTips = useTip()
 for (const tips of allOfTheTips){
   // console.log("individual tip objects", tips)
 }
+
+
+initializeDetailButtonEvents()
 
 addMouseOverEventListenersTips()
 addMouseOverEventListeners()

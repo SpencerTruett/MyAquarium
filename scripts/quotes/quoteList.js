@@ -23,7 +23,13 @@ const QuoteListComponent = () => {
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="quoteList">
-          ${allQuoteHTML}
+                    ${
+            quotes.map(
+              (currentQuote) => {
+               return QuoteComponent(currentQuote)
+              }
+            ).join("")
+          }
       </section>
   `
 }

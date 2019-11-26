@@ -11,6 +11,10 @@ import { useQuote } from './quotes/quoteDataProvider.js'
 import QuoteListComponent from './quotes/quoteList.js'
 import { useLocation } from './locations/locationDataProvider.js'
 import LocationListComponent from './locations/locationList.js'
+import initializeDetailButtonEvents from './index__dialogs.js'
+
+
+
 
  QuoteListComponent()
  const allOfTheQuotes = useQuote()
@@ -26,7 +30,8 @@ for (const locations of allOfTheQuotes){
   // console.log("individual location objects", locations)
 }
 
-import initializeDetailButtonLocations from './locations__dialogs.js'
+
+initializeDetailButtonEvents()
 
 
 

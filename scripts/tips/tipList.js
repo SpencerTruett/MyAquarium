@@ -23,7 +23,13 @@ const TipListComponent = () => {
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="tipList">
-          ${allTipHTML}
+        ${
+          tips.map(
+            (currentTip) => {
+            return TipComponent(currentTip)
+            }
+          ).join("")
+        }
       </section>
   `
 }

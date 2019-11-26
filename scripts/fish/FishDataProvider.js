@@ -60,6 +60,8 @@ const fishCollection = [
   }
 ]
 
+
+// This export function allows access to the fish data contained within; 
 export const useFish = () => {
   return fishCollection
 }
